@@ -1,8 +1,9 @@
 {
   "name": "react-callbacks",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "keywords": [],
+  "homepage": "https://github.com/seleem1337/react-callbacks",
   "main": "dist/react-callbacks.umd.js",
   "module": "dist/react-callbacks.es5.js",
   "typings": "dist/types/react-callbacks.d.ts",
@@ -12,7 +13,7 @@
   "author": "Mohamed Seleem <seleem1337@live.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/seleem1337/react-callbacks"
   },
   "license": "MIT",
   "engines": {
@@ -119,7 +120,7 @@
     "validate-commit-msg": "^2.12.2"
   },
   "dependencies": {
-    "lodash-es": "^4.17.8",
+    "lodash": "^4.17.5",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   }
