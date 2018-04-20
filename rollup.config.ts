@@ -10,14 +10,16 @@ const pkg = require('./package.json')
 const libraryName = 'react-callbacks'
 
 export default {
-  input: `src/${libraryName}.ts`,
+  input: `src/${libraryName}.tsx`,
   output: [
     { file: pkg.main, name: camelCase(libraryName), format: 'umd' },
     { file: pkg.module, format: 'es' },
   ],
   sourcemap: true,
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash')
-  external: [],
+  external: [
+    'react', 'react-dom'
+  ],
   watch: {
     include: 'src/**',
   },

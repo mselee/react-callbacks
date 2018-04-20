@@ -77,7 +77,12 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/test/setup.ts"
+    "setupTestFrameworkScriptFile": "<rootDir>/test/setup.ts",
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.test.json"
+      }
+    }
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.10",
@@ -126,6 +131,6 @@
     "react-dom": "^16.3.0"
   },
   "dependencies": {
-    "lodash": "^4.17.5"
+    "lodash-es": "^4.17.8"
   }
 }

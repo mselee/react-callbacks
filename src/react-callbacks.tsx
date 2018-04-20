@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { isEqual } from 'lodash';
+import isEqual from 'lodash-es/isEqual';
 
 export interface Callback {
   args: any[];
