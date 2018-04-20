@@ -5,7 +5,7 @@ export interface Callback {
   args: any[];
   to: PropertyKey;
   fn: Function;
-  context: this;
+  context: ThisType<any>;
 }
 
 export type Injection = { [key: string]: Function };
